@@ -5,30 +5,29 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
-
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    font-weight: lighter;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: lighter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #632538;
-  background: -o-radial-gradient(bottom, ellipse, #9F97C8, #632538);
-  background: radial-gradient(ellipse at bottom, #9F97C8, #632538);
+  background: #406a8d;
+  background: -o-radial-gradient(bottom, ellipse, #fd9928, #406a8d);
+  background: radial-gradient(ellipse at bottom, #fd9928, #406a8d);
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,9 +55,9 @@ span {
 .title {
   font-size: 4.4rem;
   text-align: center;
-  color: #E6D8B0;
+  color: #e6d8b0;
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .form {
@@ -116,12 +115,18 @@ span {
 .card {
   padding: 2rem 4rem;
   border-radius: 2rem;
-  -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
-          box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#E6D8B0), to(#b1a587));
-  background: -o-linear-gradient(#E6D8B0, #b1a587);
-  background: linear-gradient(#E6D8B0, #b1a587);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#e6d8b0),
+    to(#b1a587)
+  );
+  background: -o-linear-gradient(#e6d8b0, #b1a587);
+  background: linear-gradient(#e6d8b0, #b1a587);
 }
 
 .card--title {
@@ -132,8 +137,8 @@ span {
 .card--image {
   margin: 0 auto;
   display: block;
-  -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
-          box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .card--desc {
@@ -145,13 +150,12 @@ span {
     -ms-grid-columns: auto 1rem 1fr 1rem auto;
     grid-template-columns: auto 1fr auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
-  
+
   .label {
     margin-bottom: 0;
-
   }
 
   .input {
