@@ -1,0 +1,166 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #632538;
+  background: -o-radial-gradient(bottom, ellipse, #9F97C8, #632538);
+  background: radial-gradient(ellipse at bottom, #9F97C8, #632538);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #321;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 4rem;
+}
+
+.title {
+  font-size: 4.4rem;
+  text-align: center;
+  color: #E6D8B0;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 2rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  outline: transparent;
+  font-family: inherit;
+  font-weight: lighter;
+}
+
+.button {
+  font-family: inherit;
+  outline: transparent;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.card-list {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
+          box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E6D8B0), to(#b1a587));
+  background: -o-linear-gradient(#E6D8B0, #b1a587);
+  background: linear-gradient(#E6D8B0, #b1a587);
+}
+
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block;
+  -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
+          box-shadow: 1px 3px 5px rgba(0,0,0,0.25);
+}
+
+.card--desc {
+  margin: 2rem 0;
+}
+
+@media (min-width: 786px) {
+  .form {
+    -ms-grid-columns: auto 1rem 1fr 1rem auto;
+    grid-template-columns: auto 1fr auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .label {
+    margin-bottom: 0;
+
+  }
+
+  .input {
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  .button {
+    border-radius: 0 2rem 2rem 0;
+  }
+}
